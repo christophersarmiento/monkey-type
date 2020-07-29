@@ -7,7 +7,7 @@
   <title>Monkey Type</title>
   <link rel="stylesheet" href="css/fa.css">
   <link rel="stylesheet" href="css/balloon.css">
-  <link rel="stylesheet" href="css/style.css?v=45">
+  <link rel="stylesheet" href="css/style.css?v=46">
   <link rel="stylesheet" href="themes/serika_dark.css" id="currentTheme">
   <link id="favicon" rel="shortcut icon" href="fav.png">
   <link rel="shortcut icon" href="fav.png">
@@ -654,6 +654,7 @@
         <div id="testModesNotice">
 
         </div>
+        <div class="ssWatermark hidden">www.monkey-type.com</div>
         <div id="caret" class="default"></div>
         <div id="result" class="hidden">
           <div class="stats">
@@ -718,7 +719,7 @@
         <div id="words" class=""></div>
         <div id="liveWpm">123</div>
 
-        <div class="keymap">
+        <div class="keymap hidden">
           <div class="row r1">
             <div class="keymap-key inactive hidden-key">
               <span class="letter">`</span>
@@ -936,10 +937,18 @@
         </div>
         <div class="section">
           <h1>stats</h1>
-          <p>wpm - total amount of characters in the correctly typed words, divided by 5</p>
-          <p>raw wpm - calculated just like wpm, but also includes incorrect words</p>
-          <p>acc - percentage of correctly pressed keys</p>
-          <p>char - correct characters / incorrect characters. Calculated after the test has ended</p>
+          <p>wpm - total amount of characters in the correctly typed words (including spaces), divided by 5 and
+            normalised to 60 seconds.</p>
+          <p>raw wpm - calculated just like wpm, but also includes incorrect words.</p>
+          <p>acc - percentage of correctly pressed keys.</p>
+          <p>char - correct characters / incorrect characters. Calculated after the test has ended.</p>
+        </div>
+        <div class="section">
+          <h1>results screen</h1>
+          <p>After completing a test you will be able to see your wpm, raw wpm, accuracy, character stats, test length,
+            leaderboards info and test info. (you can hover over some values to get floating point numbers). You can
+            also see a graph of your wpm and raw over the duration of the test. Remember that the wpm line is a global
+            average, while the wpm line is a local, momentary raw value. (meaning if you stop, the value is 0)</p>
         </div>
         <div class="section">
           <h1>bug report or feature request</h1>
@@ -1574,17 +1583,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script> -->
 <script src="js/chart.js"></script>
-<script src="js/chartjs-plugin-trendline.js?v=45"></script>
+<script src="js/chartjs-plugin-trendline.js?v=46"></script>
 <script src="js/chartjs-plugin-annotation.js"></script>
 <script src="js/html2canvas.js"></script>
-<script src="js/words.js?v=45"></script>
-<script src="js/layouts.js?v=45"></script>
-<script src="js/db.js?v=45"></script>
-<script src="js/userconfig.js?v=45"></script>
-<script src="js/commandline.js?v=45"></script>
-<script src="js/leaderboards.js?v=45"></script>
-<script src="js/settings.js?v=45"></script>
-<script src="js/account.js?v=45"></script>
-<script src="js/script.js?v=45"></script>
+<script src="js/words.js?v=46"></script>
+<script src="js/layouts.js?v=46"></script>
+<script src="js/db.js?v=46"></script>
+<script src="js/userconfig.js?v=46"></script>
+<script src="js/commandline.js?v=46"></script>
+<script src="js/leaderboards.js?v=46"></script>
+<script src="js/settings.js?v=46"></script>
+<script src="js/account.js?v=46"></script>
+<script src="js/script.js?v=46"></script>
 
 </html>
